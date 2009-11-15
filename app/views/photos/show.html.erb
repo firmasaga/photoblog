@@ -1,0 +1,20 @@
+<h1><%=h @photo.title %></h1>
+<div class='photo'>
+	<%= image_tag(@photo.source.url(:medium)) %>
+</div>
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>
+
+<hr />
+
+<h2>Comments</h2>
+<%= link_to 'Add comment', new_photo_comment_path(@photo) %>
+
+<ul class='comments'>
+<% for comment in @comments do %>
+		<li><%= h comment.text %> 
+			<br /><small>von <%= h comment.name %>, <%= time_ago_in_words(comment.created_at) %> ago</small></li>
+<% end %>
+</ul>
+

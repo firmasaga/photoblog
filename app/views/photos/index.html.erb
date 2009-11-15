@@ -1,0 +1,21 @@
+<h1>My Photoblog</h1>
+
+<% for photo in @photos %>
+	<h2><%= link_to h(photo.title), photo %></h2>
+
+	<small>posted <%= time_ago_in_words(photo.created_at) %> ago</small>
+
+	<div class='photo'>
+		<%= link_to image_tag(photo.source.url(:small)), photo %>
+	</div>
+	
+	<div>
+		<%= link_to 'Edit', edit_photo_path(photo) %>
+		<%= link_to 'Destroy', photo, :confirm => 'Are you sure?', :method => :delete %>
+	</div>
+	<hr />
+<% end %>
+
+<br />
+
+<%= link_to 'New photo', new_photo_path %>

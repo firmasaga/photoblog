@@ -1,0 +1,10 @@
+<h1>Editing photo</h1>
+
+Current Photo:
+<div class='photo'>
+	<%= image_tag(@photo.source.url(:small)) %>
+</div>
+
+<hr />
+
+<%= render :partial => 'form' %>

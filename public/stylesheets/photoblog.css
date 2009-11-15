@@ -1,0 +1,177 @@
+*{  /* Reset all */
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/**************
+   Layout
+***************/
+
+body {
+  font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+  color: #666;
+  font-size: 62.5%;
+  font-size:0.8em;
+  line-height:1.6em;
+	background: #484437;
+	padding:1em 2em;
+}
+#content{
+	background:#FFF;
+	padding:1em 2em;
+	width:600px;
+}
+
+hr{
+	height:0;
+	border-top:1px solid #666;
+	margin:1em 0;
+}
+
+ul.comments{
+	margin-top:1em;
+}
+ul.comments li{
+	margin-bottom:1em;
+}
+
+
+/**************
+   Listen
+***************/
+ul{ /* reset all ul */
+  list-style-type:none;
+  margin:0;
+}
+
+/**************
+   Headings
+***************/
+h1{
+  color:#333;
+  font-family: 'Helvetica', Verdana, Arial, Sans-Serif;
+  font-size:1.6em;
+  font-weight:bold;
+	margin:0 0 0.5em 0;
+}
+h2{
+  font-size:1.2em;
+	margin:0 0 0.5em 0;
+  font-weight:bold;
+}
+h3{
+  font-size:1em;
+  font-weight:bold;
+  margin:0;
+  display:inline;
+}
+
+
+/**************
+   Links
+***************/
+
+a, input.textlike{
+  color:#4aa2da;
+  text-decoration:none
+}
+a:hover, input.textlike:hover{
+  color:#111;
+}
+
+
+
+
+/**************
+   Formulare
+***************/
+img.button, input.button{
+  display:block;
+  float:right;
+  border:none;
+  margin-top:1em;
+}
+input, select{
+  border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #aaa;
+	border-bottom:1px solid #aaa;
+	padding: 0.2em 0.3em;
+	background: #FFF;
+
+}
+input.todo, 
+select.todo, 
+textarea.todo{
+	border:1px solid #ead980;
+	background:#fffbe7;
+}
+label{
+	font-weight:bold;
+	margin-right:0.3em;
+	margin-bottom:0.3em;
+}	
+label.radiobuttons{
+	font-weight:normal;
+}
+label.radiobuttons small{
+	margin-left:0.5em;
+}
+.fieldWithErrors{
+	padding:0;
+	margin:0;
+}
+.fieldWithErrors input,
+.fieldWithErrors select,
+.fieldWithErrors textarea{
+	background:#efcad2;
+	border:1px solid #a76370;
+}
+
+textarea{
+  border:1px solid #CCCCCC;
+}
+
+div.errorExplanation{
+	border-bottom:1px solid #d1cdc3;
+	text-align:center;
+	padding-bottom:0.8em;
+}
+div.errorExplanation p{
+  font-weight:bold;
+}
+div.errorExplanation h2{
+	font-size:1.2em;
+  padding:0.3em 1.6em;
+  background:#efcad2;
+  color:#fff;
+	border-top:1px solid #a76370;
+	border-bottom:1px solid #a76370;
+  font-weight:bold;
+}
+
+
+/**************
+   Diverses
+***************/
+
+/* http://www.positioniseverything.net/easyclearing.html */
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0;
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix { display: block; } /* ie mac, safari */
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;} /* ie automatically stretches those elements */
+/* End hide from IE-mac */
+
+small{
+	color:#aaa;
+	font-size:9px;
+}

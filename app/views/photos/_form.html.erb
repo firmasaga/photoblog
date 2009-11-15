@@ -1,0 +1,20 @@
+<%= error_messages_for :photo %>
+
+<% form_for @photo, :html => { :multipart => true } do |f| %>
+
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Src</b><br />
+    <%= f.file_field :source %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', photos_path %>
